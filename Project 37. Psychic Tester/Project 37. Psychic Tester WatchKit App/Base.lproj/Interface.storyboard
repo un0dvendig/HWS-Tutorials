@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="task37_Psychic_Tester_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Please read the instructions on your phone before continuing" textAlignment="center" numberOfLines="0" id="ZqY-mB-Dai"/>
+                        <button width="1" alignment="center" verticalAlignment="center" title="I'm ready" id="Dnj-4Z-09l">
+                            <connections>
+                                <action selector="hideWelcomeText" destination="AgC-eL-Hgc" id="pFb-e3-t1d"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="hideButton" destination="Dnj-4Z-09l" id="1JF-Vh-ezz"/>
+                        <outlet property="welcomeText" destination="ZqY-mB-Dai" id="123-eq-OZY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="58"/>
+        </scene>
+    </scenes>
+</document>
